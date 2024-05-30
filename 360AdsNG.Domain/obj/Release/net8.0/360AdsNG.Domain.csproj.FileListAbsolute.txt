@@ -1,0 +1,12 @@
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\bin\Release\net8.0\360AdsNG.Domain.deps.json
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\bin\Release\net8.0\360AdsNG.Domain.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\bin\Release\net8.0\360AdsNG.Domain.pdb
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\360AdsNG.Domain.csproj.AssemblyReference.cache
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\360AdsNG.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\360AdsNG.Domain.AssemblyInfoInputs.cache
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\360AdsNG.Domain.AssemblyInfo.cs
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\360AdsNG.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\360AdsNG.Domain.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\refint\360AdsNG.Domain.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\360AdsNG.Domain.pdb
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Domain\obj\Release\net8.0\ref\360AdsNG.Domain.dll

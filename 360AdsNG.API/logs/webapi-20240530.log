@@ -1,0 +1,473 @@
+[2024-05-30 15:45:38.566 +01:00  INF]  Configuring Swagger
+[2024-05-30 15:45:38.657 +01:00  INF]  Configuring Authentication
+[2024-05-30 15:45:38.658 +01:00  INF]  Configuring CORS
+[2024-05-30 15:45:38.659 +01:00  INF]  Configuring Dependency Injection
+[2024-05-30 15:45:42.881 +01:00  INF]  Executed DbCommand (131ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:45:42.923 +01:00  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:45:43.032 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:45:43.102 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:45:43.103 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:45:43.140 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-30 15:45:43.216 +01:00  INF]  User profile is available. Using 'C:\Users\DECAGON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-05-30 15:45:43.917 +01:00  INF]  Executed DbCommand (39ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:45:44.049 +01:00  INF]  Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:45:44.055 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:45:44.090 +01:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-05-30 15:45:44.483 +01:00  WRN]  The WebRootPath was not found: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-05-30 15:45:44.793 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-05-30 15:45:44.793 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-05-30 15:45:44.794 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-05-30 15:45:44.794 +01:00  INF]  Hosting environment: Development
+[2024-05-30 15:45:44.794 +01:00  INF]  Content root path: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-05-30 15:45:46.779 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-05-30 15:45:47.184 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 416.5634ms
+[2024-05-30 15:45:47.296 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-05-30 15:45:47.296 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-05-30 15:45:47.313 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 16.6566ms
+[2024-05-30 15:45:47.376 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.6661ms
+[2024-05-30 15:45:47.502 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-05-30 15:45:47.754 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 252.5303ms
+[2024-05-30 15:46:09.718 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:46:09.723 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:46:09.892 +01:00  INF]  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2024-05-30 15:46:09.900 +01:00  INF]  AuthenticationScheme: Bearer was challenged.
+[2024-05-30 15:46:09.901 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 401 0 null 183.4557ms
+[2024-05-30 15:46:35.643 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:46:35.656 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:46:35.661 +01:00  INF]  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2024-05-30 15:46:35.662 +01:00  INF]  AuthenticationScheme: Bearer was challenged.
+[2024-05-30 15:46:35.662 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 401 0 null 19.557ms
+[2024-05-30 15:47:15.011 +01:00  INF]  Configuring Swagger
+[2024-05-30 15:47:15.126 +01:00  INF]  Configuring Authentication
+[2024-05-30 15:47:15.128 +01:00  INF]  Configuring CORS
+[2024-05-30 15:47:15.129 +01:00  INF]  Configuring Dependency Injection
+[2024-05-30 15:47:18.506 +01:00  INF]  Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:47:18.526 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:47:18.594 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:47:18.646 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:47:18.647 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:47:18.661 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-30 15:47:18.707 +01:00  INF]  User profile is available. Using 'C:\Users\DECAGON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-05-30 15:47:19.063 +01:00  INF]  Executed DbCommand (22ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:47:19.112 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:47:19.115 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:47:19.129 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-05-30 15:47:19.326 +01:00  WRN]  The WebRootPath was not found: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-05-30 15:47:19.513 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-05-30 15:47:19.514 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-05-30 15:47:19.514 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-05-30 15:47:19.514 +01:00  INF]  Hosting environment: Development
+[2024-05-30 15:47:19.514 +01:00  INF]  Content root path: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-05-30 15:47:21.694 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-05-30 15:47:22.046 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 362.0597ms
+[2024-05-30 15:47:22.149 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-05-30 15:47:22.149 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-05-30 15:47:22.168 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 19.133ms
+[2024-05-30 15:47:22.237 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.0687ms
+[2024-05-30 15:47:22.337 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-05-30 15:47:22.566 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 229.4607ms
+[2024-05-30 15:48:01.654 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:48:01.664 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:48:01.809 +01:00  INF]  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2024-05-30 15:48:01.817 +01:00  INF]  AuthenticationScheme: Bearer was challenged.
+[2024-05-30 15:48:01.818 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 401 0 null 163.6856ms
+[2024-05-30 15:48:09.769 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:48:09.776 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:48:09.782 +01:00  INF]  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2024-05-30 15:48:09.783 +01:00  INF]  AuthenticationScheme: Bearer was challenged.
+[2024-05-30 15:48:09.783 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 401 0 null 15.427ms
+[2024-05-30 15:48:30.696 +01:00  INF]  Configuring Swagger
+[2024-05-30 15:48:30.777 +01:00  INF]  Configuring Authentication
+[2024-05-30 15:48:30.779 +01:00  INF]  Configuring CORS
+[2024-05-30 15:48:30.779 +01:00  INF]  Configuring Dependency Injection
+[2024-05-30 15:48:33.975 +01:00  INF]  Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:48:33.996 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:48:34.058 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:48:34.110 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:48:34.111 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:48:34.126 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-30 15:48:34.165 +01:00  INF]  User profile is available. Using 'C:\Users\DECAGON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-05-30 15:48:34.560 +01:00  INF]  Executed DbCommand (20ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:48:34.667 +01:00  INF]  Executed DbCommand (16ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:48:34.681 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:48:34.719 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-05-30 15:48:35.019 +01:00  WRN]  The WebRootPath was not found: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-05-30 15:48:35.294 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-05-30 15:48:35.295 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-05-30 15:48:35.295 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-05-30 15:48:35.295 +01:00  INF]  Hosting environment: Development
+[2024-05-30 15:48:35.295 +01:00  INF]  Content root path: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-05-30 15:48:37.485 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-05-30 15:48:37.870 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 394.6365ms
+[2024-05-30 15:48:38.002 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-05-30 15:48:38.002 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-05-30 15:48:38.022 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 20.8441ms
+[2024-05-30 15:48:38.103 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.3271ms
+[2024-05-30 15:48:38.181 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-05-30 15:48:38.457 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 275.6441ms
+[2024-05-30 15:50:45.221 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:50:45.231 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:50:45.389 +01:00  INF]  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2024-05-30 15:50:45.396 +01:00  INF]  AuthenticationScheme: Bearer was challenged.
+[2024-05-30 15:50:45.397 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 401 0 null 175.9217ms
+[2024-05-30 15:51:49.476 +01:00  INF]  Configuring Swagger
+[2024-05-30 15:51:49.539 +01:00  INF]  Configuring Authentication
+[2024-05-30 15:51:49.541 +01:00  INF]  Configuring CORS
+[2024-05-30 15:51:49.541 +01:00  INF]  Configuring Dependency Injection
+[2024-05-30 15:51:54.016 +01:00  INF]  Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:51:54.037 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:51:54.102 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:51:54.159 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:51:54.160 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:51:54.175 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-30 15:51:54.217 +01:00  INF]  User profile is available. Using 'C:\Users\DECAGON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-05-30 15:51:54.625 +01:00  INF]  Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:51:54.679 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:51:54.682 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:51:54.697 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-05-30 15:51:54.920 +01:00  WRN]  The WebRootPath was not found: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-05-30 15:51:55.110 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-05-30 15:51:55.110 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-05-30 15:51:55.110 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-05-30 15:51:55.110 +01:00  INF]  Hosting environment: Development
+[2024-05-30 15:51:55.110 +01:00  INF]  Content root path: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-05-30 15:51:58.218 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-05-30 15:51:58.831 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 628.7754ms
+[2024-05-30 15:51:58.903 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-05-30 15:51:58.903 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-05-30 15:51:58.942 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 39.771ms
+[2024-05-30 15:51:59.206 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 303.327ms
+[2024-05-30 15:51:59.296 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-05-30 15:51:59.606 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 310.9964ms
+[2024-05-30 15:52:47.900 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:52:47.910 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:52:48.072 +01:00  INF]  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2024-05-30 15:52:48.076 +01:00  INF]  AuthenticationScheme: Bearer was challenged.
+[2024-05-30 15:52:48.077 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 401 0 null 176.9737ms
+[2024-05-30 15:53:00.678 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:53:00.696 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:53:00.710 +01:00  INF]  Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2024-05-30 15:53:00.711 +01:00  INF]  AuthenticationScheme: Bearer was challenged.
+[2024-05-30 15:53:00.712 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 401 0 null 33.8892ms
+[2024-05-30 15:53:45.696 +01:00  INF]  Configuring Swagger
+[2024-05-30 15:53:45.772 +01:00  INF]  Configuring Authentication
+[2024-05-30 15:53:45.774 +01:00  INF]  Configuring CORS
+[2024-05-30 15:53:45.774 +01:00  INF]  Configuring Dependency Injection
+[2024-05-30 15:53:49.086 +01:00  INF]  Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:53:49.109 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:53:49.189 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:53:49.271 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-30 15:53:49.272 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-30 15:53:49.289 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-30 15:53:49.333 +01:00  INF]  User profile is available. Using 'C:\Users\DECAGON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-05-30 15:53:49.752 +01:00  INF]  Executed DbCommand (22ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:53:49.811 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:53:49.814 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-05-30 15:53:49.831 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-05-30 15:53:50.048 +01:00  WRN]  The WebRootPath was not found: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-05-30 15:53:50.212 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-05-30 15:53:50.212 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-05-30 15:53:50.212 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-05-30 15:53:50.212 +01:00  INF]  Hosting environment: Development
+[2024-05-30 15:53:50.212 +01:00  INF]  Content root path: C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-05-30 15:53:52.350 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-05-30 15:53:52.805 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 464.9899ms
+[2024-05-30 15:53:52.904 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-05-30 15:53:52.904 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-05-30 15:53:52.913 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 9.9579ms
+[2024-05-30 15:53:53.022 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.3727ms
+[2024-05-30 15:53:53.115 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-05-30 15:53:53.431 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 316.6917ms
+[2024-05-30 15:54:18.743 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/login - application/json 59
+[2024-05-30 15:54:18.752 +01:00  INF]  CORS policy execution successful.
+[2024-05-30 15:54:18.893 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-05-30 15:54:18.937 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-05-30 15:54:28.488 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-05-30 15:54:32.926 +01:00  INF]  Executed DbCommand (8ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+[2024-05-30 15:54:42.395 +01:00  INF]  Executing OkObjectResult, writing value of type '_360AdsNG.API.Dtos.ResponseDto`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2024-05-30 15:54:47.892 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 28946.3208ms
+[2024-05-30 15:54:47.893 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-05-30 15:54:47.902 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/login - 200 null application/json; charset=utf-8 29159.1245ms
+[2024-05-30 15:55:23.343 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/api/v1/billboard - null null
+[2024-05-30 15:55:23.485 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.BillboardController.GetAllBillboard (360AdsNG.API)'
+[2024-05-30 15:55:23.500 +01:00  INF]  Route matched with {action = "GetAllBillboard", controller = "Billboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBillboard(_360AdsNG.Application.Dtos.PaginationFilter) on controller _360AdsNG.API.Controllers.BillboardController (360AdsNG.API).
+[2024-05-30 15:55:23.718 +01:00  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Billboards" AS b
+[2024-05-30 15:55:23.737 +01:00  WRN]  The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+[2024-05-30 15:55:23.739 +01:00  WRN]  The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+[2024-05-30 15:55:23.753 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT b."Id" AS "BillboardId", b."Name" AS "BillboardName", b."AddressId" AS "Location", b."DailyImpressions", b."BoardType", b."Time", b."Price", b."ImageUrl"
+FROM "Billboards" AS b
+LIMIT @__p_1 OFFSET @__p_0
+[2024-05-30 15:55:23.759 +01:00  INF]  Executing OkObjectResult, writing value of type '_360AdsNG.API.Dtos.ResponseDto`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2024-05-30 15:55:23.772 +01:00  INF]  Executed action _360AdsNG.API.Controllers.BillboardController.GetAllBillboard (360AdsNG.API) in 271.3658ms
+[2024-05-30 15:55:23.772 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.BillboardController.GetAllBillboard (360AdsNG.API)'
+[2024-05-30 15:55:23.773 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/api/v1/billboard - 200 null application/json; charset=utf-8 429.5256ms
+[2024-05-30 15:56:03.635 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails1 - null null
+[2024-05-30 15:56:03.653 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:03.663 +01:00  INF]  Route matched with {action = "GetBillboardDetails", controller = "Billboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBillboardDetails(System.String) on controller _360AdsNG.API.Controllers.BillboardController (360AdsNG.API).
+[2024-05-30 15:56:03.740 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__billboardId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT b."Id", b."AddressId", b."BoardType", b."CreatedAt", b."DailyImpressions", b."Dimension", b."DurationPerDisplay", b."ImageUrl", b."Name", b."Negotiable", b."Note", b."Orientation", b."PixelSize", b."Price", b."Time", b."TrafficDescription", b."UpdatedAt", b."UserId", a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "Billboards" AS b
+INNER JOIN "AspNetUsers" AS a ON b."UserId" = a."Id"
+WHERE b."Id" = @__billboardId_0
+LIMIT 1
+[2024-05-30 15:56:03.845 +01:00  INF]  Executing OkObjectResult, writing value of type '_360AdsNG.API.Dtos.ResponseDto`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2024-05-30 15:56:03.846 +01:00  INF]  Executed action _360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API) in 183.1442ms
+[2024-05-30 15:56:03.846 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:03.848 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails1 - 200 null application/json; charset=utf-8 212.6248ms
+[2024-05-30 15:56:14.460 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails2 - null null
+[2024-05-30 15:56:14.463 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:14.467 +01:00  INF]  Route matched with {action = "GetBillboardDetails", controller = "Billboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBillboardDetails(System.String) on controller _360AdsNG.API.Controllers.BillboardController (360AdsNG.API).
+[2024-05-30 15:56:14.489 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__billboardId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT b."Id", b."AddressId", b."BoardType", b."CreatedAt", b."DailyImpressions", b."Dimension", b."DurationPerDisplay", b."ImageUrl", b."Name", b."Negotiable", b."Note", b."Orientation", b."PixelSize", b."Price", b."Time", b."TrafficDescription", b."UpdatedAt", b."UserId", a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "Billboards" AS b
+INNER JOIN "AspNetUsers" AS a ON b."UserId" = a."Id"
+WHERE b."Id" = @__billboardId_0
+LIMIT 1
+[2024-05-30 15:56:14.495 +01:00  INF]  Executing OkObjectResult, writing value of type '_360AdsNG.API.Dtos.ResponseDto`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2024-05-30 15:56:14.495 +01:00  INF]  Executed action _360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API) in 27.6287ms
+[2024-05-30 15:56:14.495 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:14.496 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails2 - 200 null application/json; charset=utf-8 36.9224ms
+[2024-05-30 15:56:42.264 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails"2" - null null
+[2024-05-30 15:56:42.269 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:42.271 +01:00  INF]  Route matched with {action = "GetBillboardDetails", controller = "Billboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBillboardDetails(System.String) on controller _360AdsNG.API.Controllers.BillboardController (360AdsNG.API).
+[2024-05-30 15:56:42.275 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__billboardId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT b."Id", b."AddressId", b."BoardType", b."CreatedAt", b."DailyImpressions", b."Dimension", b."DurationPerDisplay", b."ImageUrl", b."Name", b."Negotiable", b."Note", b."Orientation", b."PixelSize", b."Price", b."Time", b."TrafficDescription", b."UpdatedAt", b."UserId", a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "Billboards" AS b
+INNER JOIN "AspNetUsers" AS a ON b."UserId" = a."Id"
+WHERE b."Id" = @__billboardId_0
+LIMIT 1
+[2024-05-30 15:56:42.280 +01:00  INF]  Executing BadRequestObjectResult, writing value of type '_360AdsNG.API.Dtos.ResponseDto`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2024-05-30 15:56:42.282 +01:00  INF]  Executed action _360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API) in 10.4956ms
+[2024-05-30 15:56:42.282 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:42.283 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails"2" - 400 null application/json; charset=utf-8 29.5007ms
+[2024-05-30 15:56:51.594 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails2 - null null
+[2024-05-30 15:56:51.595 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:51.595 +01:00  INF]  Route matched with {action = "GetBillboardDetails", controller = "Billboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBillboardDetails(System.String) on controller _360AdsNG.API.Controllers.BillboardController (360AdsNG.API).
+[2024-05-30 15:56:51.600 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__billboardId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT b."Id", b."AddressId", b."BoardType", b."CreatedAt", b."DailyImpressions", b."Dimension", b."DurationPerDisplay", b."ImageUrl", b."Name", b."Negotiable", b."Note", b."Orientation", b."PixelSize", b."Price", b."Time", b."TrafficDescription", b."UpdatedAt", b."UserId", a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "Billboards" AS b
+INNER JOIN "AspNetUsers" AS a ON b."UserId" = a."Id"
+WHERE b."Id" = @__billboardId_0
+LIMIT 1
+[2024-05-30 15:56:51.603 +01:00  INF]  Executing OkObjectResult, writing value of type '_360AdsNG.API.Dtos.ResponseDto`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2024-05-30 15:56:51.603 +01:00  INF]  Executed action _360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API) in 7.9962ms
+[2024-05-30 15:56:51.604 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.BillboardController.GetBillboardDetails (360AdsNG.API)'
+[2024-05-30 15:56:51.604 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/api/v1/billboard/GetBillboardDetails2 - 200 null application/json; charset=utf-8 10.8351ms

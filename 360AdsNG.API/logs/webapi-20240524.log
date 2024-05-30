@@ -1,0 +1,63 @@
+[2024-05-24 08:14:39.971 +01:00  INF]  Configuring Swagger
+[2024-05-24 08:14:40.018 +01:00  INF]  Configuring Authentication
+[2024-05-24 08:14:40.018 +01:00  INF]  Configuring CORS
+[2024-05-24 08:14:40.019 +01:00  INF]  Configuring Dependency Injection
+[2024-05-24 21:24:39.130 +01:00  INF]  Configuring Swagger
+[2024-05-24 21:24:39.167 +01:00  INF]  Configuring Authentication
+[2024-05-24 21:24:39.167 +01:00  INF]  Configuring CORS
+[2024-05-24 21:24:39.167 +01:00  INF]  Configuring Dependency Injection
+[2024-05-24 21:25:58.002 +01:00  INF]  Configuring Swagger
+[2024-05-24 21:25:58.034 +01:00  INF]  Configuring Authentication
+[2024-05-24 21:25:58.037 +01:00  INF]  Configuring CORS
+[2024-05-24 21:25:58.037 +01:00  INF]  Configuring Dependency Injection
+[2024-05-24 21:26:13.377 +01:00  INF]  Configuring Swagger
+[2024-05-24 21:26:13.405 +01:00  INF]  Configuring Authentication
+[2024-05-24 21:26:13.406 +01:00  INF]  Configuring CORS
+[2024-05-24 21:26:13.406 +01:00  INF]  Configuring Dependency Injection
+[2024-05-24 21:26:43.528 +01:00  INF]  Configuring Swagger
+[2024-05-24 21:26:43.559 +01:00  INF]  Configuring Authentication
+[2024-05-24 21:26:43.560 +01:00  INF]  Configuring CORS
+[2024-05-24 21:26:43.560 +01:00  INF]  Configuring Dependency Injection
+[2024-05-24 21:26:44.723 +01:00  INF]  Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-24 21:26:44.745 +01:00  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-24 21:26:44.813 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-24 21:26:44.870 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-24 21:26:44.871 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-24 21:26:44.886 +01:00  INF]  Applying migration '20240524202614_initial'.
+[2024-05-24 21:26:45.001 +01:00  ERR]  Failed executing DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Addresses" (
+    "Id" text NOT NULL,
+    "Street" text NOT NULL,
+    "City" text NOT NULL,
+    "State" text NOT NULL,
+    "Country" text NOT NULL,
+    "Longitude" double precision,
+    "Latitude" double precision,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "UpdatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Addresses" PRIMARY KEY ("Id")
+);

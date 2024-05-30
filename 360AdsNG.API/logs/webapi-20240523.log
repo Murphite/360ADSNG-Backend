@@ -1,0 +1,375 @@
+[2024-05-23 09:24:54.232 +01:00  INF]  Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 09:24:54.281 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 09:24:54.339 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 09:24:54.390 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 09:24:54.391 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 09:24:54.400 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-23 10:32:05.618 +01:00  INF]  Configuring Swagger
+[2024-05-23 10:32:05.654 +01:00  INF]  Configuring Authentication
+[2024-05-23 10:32:05.654 +01:00  INF]  Configuring CORS
+[2024-05-23 10:32:05.654 +01:00  INF]  Configuring Dependency Injection
+[2024-05-23 10:32:06.752 +01:00  INF]  Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:32:06.771 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:32:06.831 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:32:06.885 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:32:06.886 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:32:06.898 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-23 10:36:07.079 +01:00  INF]  Configuring Swagger
+[2024-05-23 10:36:07.105 +01:00  INF]  Configuring Authentication
+[2024-05-23 10:36:07.105 +01:00  INF]  Configuring CORS
+[2024-05-23 10:36:07.106 +01:00  INF]  Configuring Dependency Injection
+[2024-05-23 10:36:52.690 +01:00  INF]  Configuring Swagger
+[2024-05-23 10:36:52.721 +01:00  INF]  Configuring Authentication
+[2024-05-23 10:36:52.721 +01:00  INF]  Configuring CORS
+[2024-05-23 10:36:52.721 +01:00  INF]  Configuring Dependency Injection
+[2024-05-23 10:36:53.764 +01:00  INF]  Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:36:53.785 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:36:53.853 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:36:53.909 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:36:53.910 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:36:53.924 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-23 10:41:39.088 +01:00  INF]  Configuring Swagger
+[2024-05-23 10:41:39.128 +01:00  INF]  Configuring Authentication
+[2024-05-23 10:41:39.128 +01:00  INF]  Configuring CORS
+[2024-05-23 10:41:39.128 +01:00  INF]  Configuring Dependency Injection
+[2024-05-23 10:41:40.389 +01:00  INF]  Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:41:40.410 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:41:40.474 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:41:40.525 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:41:40.526 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:41:40.538 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-05-23 10:45:04.620 +01:00  INF]  Configuring Swagger
+[2024-05-23 10:45:04.660 +01:00  INF]  Configuring Authentication
+[2024-05-23 10:45:04.661 +01:00  INF]  Configuring CORS
+[2024-05-23 10:45:04.661 +01:00  INF]  Configuring Dependency Injection
+[2024-05-23 10:45:19.487 +01:00  INF]  Configuring Swagger
+[2024-05-23 10:45:19.514 +01:00  INF]  Configuring Authentication
+[2024-05-23 10:45:19.515 +01:00  INF]  Configuring CORS
+[2024-05-23 10:45:19.515 +01:00  INF]  Configuring Dependency Injection
+[2024-05-23 10:45:20.568 +01:00  INF]  Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:45:20.588 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:45:20.666 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:45:20.729 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:45:20.731 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:45:20.746 +01:00  INF]  Applying migration '20240523094506_initial'.
+[2024-05-23 10:45:20.846 +01:00  ERR]  Failed executing DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Addresses" (
+    "Id" text NOT NULL,
+    "Street" text NOT NULL,
+    "City" text NOT NULL,
+    "State" text NOT NULL,
+    "Country" text NOT NULL,
+    "Longitude" double precision,
+    "Latitude" double precision,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "UpdatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Addresses" PRIMARY KEY ("Id")
+);
+[2024-05-23 10:46:46.124 +01:00  INF]  Configuring Swagger
+[2024-05-23 10:46:46.153 +01:00  INF]  Configuring Authentication
+[2024-05-23 10:46:46.154 +01:00  INF]  Configuring CORS
+[2024-05-23 10:46:46.154 +01:00  INF]  Configuring Dependency Injection
+[2024-05-23 10:46:47.752 +01:00  INF]  Executed DbCommand (370ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "360AdsNG";
+[2024-05-23 10:46:47.993 +01:00  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+[2024-05-23 10:46:48.092 +01:00  INF]  Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-05-23 10:46:48.098 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-05-23 10:46:48.111 +01:00  INF]  Applying migration '20240523094506_initial'.
+[2024-05-23 10:46:48.194 +01:00  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Addresses" (
+    "Id" text NOT NULL,
+    "Street" text NOT NULL,
+    "City" text NOT NULL,
+    "State" text NOT NULL,
+    "Country" text NOT NULL,
+    "Longitude" double precision,
+    "Latitude" double precision,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "UpdatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Addresses" PRIMARY KEY ("Id")
+);
+[2024-05-23 10:46:48.201 +01:00  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256),
+    "NormalizedName" character varying(256),
+    "ConcurrencyStamp" text,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+[2024-05-23 10:46:48.212 +01:00  INF]  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUsers" (
+    "Id" text NOT NULL,
+    "FirstName" text,
+    "LastName" text,
+    "ImageUrl" text,
+    "Occupation" text,
+    "BusinessName" text,
+    "ContactName" text,
+    "PublicId" text NOT NULL,
+    "AddressId" text,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "UpdatedAt" timestamp with time zone NOT NULL,
+    "Password" text NOT NULL,
+    "ConfirmPassword" text NOT NULL,
+    "UserName" character varying(256),
+    "NormalizedUserName" character varying(256),
+    "Email" character varying(256),
+    "NormalizedEmail" character varying(256),
+    "EmailConfirmed" boolean NOT NULL,
+    "PasswordHash" text,
+    "SecurityStamp" text,
+    "ConcurrencyStamp" text,
+    "PhoneNumber" text,
+    "PhoneNumberConfirmed" boolean NOT NULL,
+    "TwoFactorEnabled" boolean NOT NULL,
+    "LockoutEnd" timestamp with time zone,
+    "LockoutEnabled" boolean NOT NULL,
+    "AccessFailedCount" integer NOT NULL,
+    CONSTRAINT "PK_AspNetUsers" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetUsers_Addresses_AddressId" FOREIGN KEY ("AddressId") REFERENCES "Addresses" ("Id")
+);
+[2024-05-23 10:46:48.220 +01:00  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoleClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "RoleId" text NOT NULL,
+    "ClaimType" text,
+    "ClaimValue" text,
+    CONSTRAINT "PK_AspNetRoleClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetRoleClaims_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE
+);
+[2024-05-23 10:46:48.225 +01:00  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "UserId" text NOT NULL,
+    "ClaimType" text,
+    "ClaimValue" text,
+    CONSTRAINT "PK_AspNetUserClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetUserClaims_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+[2024-05-23 10:46:48.232 +01:00  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserLogins" (
+    "LoginProvider" text NOT NULL,
+    "ProviderKey" text NOT NULL,
+    "ProviderDisplayName" text,
+    "UserId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey"),
+    CONSTRAINT "FK_AspNetUserLogins_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+[2024-05-23 10:46:48.237 +01:00  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserRoles" (
+    "UserId" text NOT NULL,
+    "RoleId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId"),
+    CONSTRAINT "FK_AspNetUserRoles_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_AspNetUserRoles_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+[2024-05-23 10:46:48.287 +01:00  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserTokens" (
+    "UserId" text NOT NULL,
+    "LoginProvider" text NOT NULL,
+    "Name" text NOT NULL,
+    "Value" text,
+    CONSTRAINT "PK_AspNetUserTokens" PRIMARY KEY ("UserId", "LoginProvider", "Name"),
+    CONSTRAINT "FK_AspNetUserTokens_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+[2024-05-23 10:46:48.294 +01:00  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Billboards" (
+    "Id" text NOT NULL,
+    "UserId" text NOT NULL,
+    "AddressId" text NOT NULL,
+    "Name" text NOT NULL,
+    "Price" integer NOT NULL,
+    "BoardType" text NOT NULL,
+    "DailyImpressions" integer NOT NULL,
+    "DurationPerDisplay" integer NOT NULL,
+    "Time" text NOT NULL,
+    "Dimension" text NOT NULL,
+    "PixelSize" text NOT NULL,
+    "Orientation" integer NOT NULL,
+    "Negotiable" integer NOT NULL,
+    "TrafficDescription" text NOT NULL,
+    "ImageUrl" text NOT NULL,
+    "Note" text NOT NULL,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "UpdatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Billboards" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Billboards_Addresses_AddressId" FOREIGN KEY ("AddressId") REFERENCES "Addresses" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Billboards_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+[2024-05-23 10:46:48.302 +01:00  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Vendors" (
+    "Id" text NOT NULL,
+    "UserId" text NOT NULL,
+    "AddressId" text,
+    "CompanyName" text,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "UpdatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Vendors" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Vendors_Addresses_AddressId" FOREIGN KEY ("AddressId") REFERENCES "Addresses" ("Id"),
+    CONSTRAINT "FK_Vendors_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+[2024-05-23 10:46:48.305 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetRoleClaims_RoleId" ON "AspNetRoleClaims" ("RoleId");
+[2024-05-23 10:46:48.307 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName");
+[2024-05-23 10:46:48.310 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserClaims_UserId" ON "AspNetUserClaims" ("UserId");
+[2024-05-23 10:46:48.312 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserLogins_UserId" ON "AspNetUserLogins" ("UserId");
+[2024-05-23 10:46:48.315 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserRoles_RoleId" ON "AspNetUserRoles" ("RoleId");
+[2024-05-23 10:46:48.318 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
+[2024-05-23 10:46:48.320 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUsers_AddressId" ON "AspNetUsers" ("AddressId");
+[2024-05-23 10:46:48.322 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
+[2024-05-23 10:46:48.325 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Billboards_AddressId" ON "Billboards" ("AddressId");
+[2024-05-23 10:46:48.328 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Billboards_UserId" ON "Billboards" ("UserId");
+[2024-05-23 10:46:48.331 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Vendors_AddressId" ON "Vendors" ("AddressId");
+[2024-05-23 10:46:48.334 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Vendors_UserId" ON "Vendors" ("UserId");
+[2024-05-23 10:46:48.335 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240523094506_initial', '8.0.4');
+[2024-05-23 14:41:21.793 +01:00  INF]  Configuring Swagger
+[2024-05-23 14:41:21.862 +01:00  INF]  Configuring Authentication
+[2024-05-23 14:41:21.863 +01:00  INF]  Configuring CORS
+[2024-05-23 14:41:21.864 +01:00  INF]  Configuring Dependency Injection

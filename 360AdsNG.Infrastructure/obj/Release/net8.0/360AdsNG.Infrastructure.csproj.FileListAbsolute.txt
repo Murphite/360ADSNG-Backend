@@ -1,0 +1,15 @@
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\bin\Release\net8.0\360AdsNG.Infrastructure.deps.json
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\bin\Release\net8.0\360AdsNG.Infrastructure.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\bin\Release\net8.0\360AdsNG.Infrastructure.pdb
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\bin\Release\net8.0\360AdsNG.Domain.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\bin\Release\net8.0\360AdsNG.Domain.pdb
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.Infrastructure.AssemblyInfo.cs
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.7AA7A4BD.Up2Date
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.Infrastructure.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\refint\360AdsNG.Infrastructure.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\360AdsNG.Infrastructure.pdb
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Release\net8.0\ref\360AdsNG.Infrastructure.dll

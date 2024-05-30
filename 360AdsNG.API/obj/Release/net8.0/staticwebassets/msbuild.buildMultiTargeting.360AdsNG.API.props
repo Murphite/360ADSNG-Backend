@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\360AdsNG.API.props" />
+</Project>

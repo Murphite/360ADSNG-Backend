@@ -1,0 +1,9 @@
+@_360AdsNG.API_HostAddress = http://localhost:7112
+
+GET {{_360AdsNG.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{_360AdsNG.API_HostAddress}}/billboard/
+Accept: application/json
