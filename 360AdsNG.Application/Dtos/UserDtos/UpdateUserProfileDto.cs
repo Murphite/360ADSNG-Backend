@@ -1,6 +1,4 @@
-﻿
-
-using _360AdsNG.Domain.Entities;
+﻿using _360AdsNG.Domain.Entities;
 
 namespace _360AdsNG.Application.Dtos.UserDtos;
 

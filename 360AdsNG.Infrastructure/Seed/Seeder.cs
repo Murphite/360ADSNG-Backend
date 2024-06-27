@@ -38,7 +38,8 @@ public static class Seeder
                 Email = "admin@admin.com",
                 PhoneNumber = "08130990162",
                 FirstName = "Admin",
-                LastName = "Admin"
+                LastName = "Admin",
+                PublicId = Guid.NewGuid().ToString()
             };
             var result = await userManager.CreateAsync(user, "Admin@123");
             if (result.Succeeded)

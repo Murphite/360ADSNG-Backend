@@ -10,8 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace _360AdsNG.API.Controllers;
 
 [ApiController]
-//[Authorize]
-[Route("api/v1/user")]
+[Route("api/user")]
 public class UserController : Controller
 {
     private readonly IUserService _userService;

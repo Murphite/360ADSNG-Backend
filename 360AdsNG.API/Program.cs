@@ -7,6 +7,12 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables();
+
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
@@ -17,15 +23,13 @@ builder.Logging.AddSerilog();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 builder.Services.AddDbServices(builder.Configuration);
 
-// Register logger service
-var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<LoggingCategory>>();
-builder.Services.AddServices(builder.Configuration, logger);
+builder.Services.AddServices(builder.Configuration, builder.Services.BuildServiceProvider().GetRequiredService<ILogger<LoggingCategory>>());
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -58,17 +62,10 @@ try
 }
 catch (Exception ex)
 {
+    var logger = app.Services.GetRequiredService<ILogger<LoggingCategory>>();
     logger.LogError(ex, "An error occurred during seeding.");
 }
 
 app.Run();
 
 
-//void SeedDatabase()
-//{
-//    using (var scope = app.Services.CreateScope())
-//    {
-//        var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
-//        dbInitializer.Initialize();
-//    }
-//}

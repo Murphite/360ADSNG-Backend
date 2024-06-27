@@ -1,7 +1,4 @@
-﻿
-
-
-using _360AdsNG.Domain.Enums;
+﻿using _360AdsNG.Domain.Enums;
 
 namespace _360AdsNG.Domain.Entities;
 
@@ -11,7 +8,6 @@ public class Billboard : Entity, IAuditable
     public string AddressId { get; set; }
     public string Name { get; set; }
     public int Price { get; set; }
-    //public string Location { get; set; }
     public string BoardType { get; set; }
     public int DailyImpressions {  get; set; }
     public int DurationPerDisplay { get; set; }

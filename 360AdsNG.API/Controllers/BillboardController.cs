@@ -10,8 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace _360AdsNG.API.Controllers;
 
 [ApiController]
-//[Authorize]
-[Route("api/v1/billboard")]
+[Route("api/billboard")]
 public class BillboardController : Controller
 {
     private readonly IBillboardService _billboardService;
@@ -25,7 +24,7 @@ public class BillboardController : Controller
         _userManager = userManager;
     }
 
-    [HttpPost]
+    [HttpPost("CreateNewBillboard")]
     public async Task<IActionResult> CreateNewBillboard([FromBody] CreateBillboardDto billboardDto)
     {
         var userId = GetUserId();
@@ -38,7 +37,7 @@ public class BillboardController : Controller
         return Ok(ResponseDto<object>.Success());
     }
 
-    [HttpGet]
+    [HttpGet("GetAllBillboard")]
     public async Task<IActionResult> GetAllBillboard([FromQuery] PaginationFilter? paginationFilter)
     {
         paginationFilter ??= new PaginationFilter();
@@ -57,10 +56,10 @@ public class BillboardController : Controller
         if (result.IsFailure)
             return BadRequest(ResponseDto<object>.Failure(result.Errors));
 
-        return Ok(ResponseDto<object>.Success());
+        return Ok(ResponseDto<object>.Success(result.Data));
     }
 
-    [HttpPut]
+    [HttpPut("UpdateBillboard")]
     public async Task<IActionResult> UpdateBillboard([FromBody] UpdateBillboardDto dto)
     {
         var userId = _userManager.GetUserId(User);
@@ -71,7 +70,7 @@ public class BillboardController : Controller
         return Ok(ResponseDto<object>.Success());
     }
 
-    [HttpDelete("{billboardId}")]
+    [HttpDelete("DeleteBy{billboardId}")]
     public async Task<IActionResult> DeleteBillboard(string billboardId)
     {
         var userId = _userManager.GetUserId(User);
