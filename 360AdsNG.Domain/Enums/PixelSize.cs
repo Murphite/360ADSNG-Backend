@@ -1,6 +1,4 @@
-﻿
-
-namespace _360AdsNG.Domain.Enums;
+﻿namespace _360AdsNG.Domain.Enums;
 
 public class PixelSize
 {

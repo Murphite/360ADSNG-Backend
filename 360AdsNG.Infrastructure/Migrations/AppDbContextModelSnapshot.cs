@@ -133,6 +133,48 @@ namespace _360AdsNG.Infrastructure.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "admin_id",
+                            RoleId = "C7D92975-6187-4A4A-AA7A-2CDE79566E27"
+                        },
+                        new
+                        {
+                            UserId = "user_id_1",
+                            RoleId = "8E4D3983-F718-4A22-AA52-3C59BCA7ABA4"
+                        },
+                        new
+                        {
+                            UserId = "user_id_2",
+                            RoleId = "8E4D3983-F718-4A22-AA52-3C59BCA7ABA4"
+                        },
+                        new
+                        {
+                            UserId = "user_id_3",
+                            RoleId = "8E4D3983-F718-4A22-AA52-3C59BCA7ABA4"
+                        },
+                        new
+                        {
+                            UserId = "user_id_4",
+                            RoleId = "8E4D3983-F718-4A22-AA52-3C59BCA7ABA4"
+                        },
+                        new
+                        {
+                            UserId = "user_id_5",
+                            RoleId = "588731E6-8914-4A5F-8385-7218ED3241E1"
+                        },
+                        new
+                        {
+                            UserId = "user_id_6",
+                            RoleId = "588731E6-8914-4A5F-8385-7218ED3241E1"
+                        },
+                        new
+                        {
+                            UserId = "user_id_7",
+                            RoleId = "588731E6-8914-4A5F-8385-7218ED3241E1"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -197,96 +239,96 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Id = "0",
                             City = "Admin City",
                             Country = "Admin Country",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1830), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6410), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 78.909999999999997,
                             Longitude = 100.111,
                             State = "Admin State",
                             Street = "123 Admin St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1834), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6412), new TimeSpan(0, 0, 0, 0, 0))
                         },
                         new
                         {
                             Id = "1",
                             City = "Cityville",
                             Country = "Countryland",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1843), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6418), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 78.909999999999997,
                             Longitude = 123.456,
                             State = "Stateville",
                             Street = "123 Main St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1844), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6418), new TimeSpan(0, 0, 0, 0, 0))
                         },
                         new
                         {
                             Id = "2",
                             City = "Townsville",
                             Country = "Anotherland",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1849), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6424), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 12.345000000000001,
                             Longitude = 45.677999999999997,
                             State = "Countyville",
                             Street = "456 Elm St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1850), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6424), new TimeSpan(0, 0, 0, 0, 0))
                         },
                         new
                         {
                             Id = "3",
                             City = "Villagetown",
                             Country = "Otherland",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1862), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6429), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 67.890000000000001,
                             Longitude = 90.123000000000005,
                             State = "Provinceville",
                             Street = "789 Oak St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1863), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6430), new TimeSpan(0, 0, 0, 0, 0))
                         },
                         new
                         {
                             Id = "4",
                             City = "Hamletville",
                             Country = "Someland",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1867), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6439), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 89.012,
                             Longitude = 34.567,
                             State = "Territorytown",
                             Street = "1011 Pine St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1874), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6440), new TimeSpan(0, 0, 0, 0, 0))
                         },
                         new
                         {
                             Id = "5",
                             City = "Countryside",
                             Country = "Landofthefree",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1878), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6445), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 23.456,
                             Longitude = 56.789000000000001,
                             State = "Districtville",
                             Street = "1213 Cedar St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1879), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6449), new TimeSpan(0, 0, 0, 0, 0))
                         },
                         new
                         {
                             Id = "6",
                             City = "Settlementtown",
                             Country = "Everywhere",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1883), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6454), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 34.567,
                             Longitude = 78.900999999999996,
                             State = "Municipality",
                             Street = "1415 Birch St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1883), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6454), new TimeSpan(0, 0, 0, 0, 0))
                         },
                         new
                         {
                             Id = "7",
                             City = "Hollowville",
                             Country = "Otherland",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1887), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6467), new TimeSpan(0, 0, 0, 0, 0)),
                             Latitude = 90.123000000000005,
                             Longitude = 12.345000000000001,
                             State = "Territorytown",
                             Street = "1617 Maple St",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(1888), new TimeSpan(0, 0, 0, 0, 0))
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6468), new TimeSpan(0, 0, 0, 0, 0))
                         });
                 });
 
@@ -370,7 +412,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Id = "1",
                             AddressId = "1",
                             BoardType = "Static",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2163), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6663), new TimeSpan(0, 0, 0, 0, 0)),
                             DailyImpressions = 1000,
                             Dimension = "10x20",
                             DurationPerDisplay = 10,
@@ -383,7 +425,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Price = 100,
                             Time = "Day",
                             TrafficDescription = "High traffic area",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2163), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6664), new TimeSpan(0, 0, 0, 0, 0)),
                             UserId = "user_id_1"
                         },
                         new
@@ -391,7 +433,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Id = "2",
                             AddressId = "2",
                             BoardType = "Static",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2176), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6670), new TimeSpan(0, 0, 0, 0, 0)),
                             DailyImpressions = 800,
                             Dimension = "20x40",
                             DurationPerDisplay = 15,
@@ -404,7 +446,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Price = 150,
                             Time = "Night",
                             TrafficDescription = "Moderate traffic area",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2177), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6671), new TimeSpan(0, 0, 0, 0, 0)),
                             UserId = "user_id_2"
                         },
                         new
@@ -412,7 +454,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Id = "3",
                             AddressId = "3",
                             BoardType = "Static",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2220), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6677), new TimeSpan(0, 0, 0, 0, 0)),
                             DailyImpressions = 1000,
                             Dimension = "20x40",
                             DurationPerDisplay = 15,
@@ -425,7 +467,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Price = 250,
                             Time = "Night",
                             TrafficDescription = "Moderate traffic area",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2220), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6678), new TimeSpan(0, 0, 0, 0, 0)),
                             UserId = "user_id_3"
                         },
                         new
@@ -433,7 +475,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Id = "4",
                             AddressId = "4",
                             BoardType = "Dynamic",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2226), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6683), new TimeSpan(0, 0, 0, 0, 0)),
                             DailyImpressions = 1000,
                             Dimension = "20x40",
                             DurationPerDisplay = 15,
@@ -446,7 +488,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Price = 250,
                             Time = "Night",
                             TrafficDescription = "Metal Billboard traffic area",
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 129, DateTimeKind.Unspecified).AddTicks(2226), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 418, DateTimeKind.Unspecified).AddTicks(6684), new TimeSpan(0, 0, 0, 0, 0)),
                             UserId = "user_id_4"
                         });
                 });
@@ -487,12 +529,14 @@ namespace _360AdsNG.Infrastructure.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("LockoutEnabled")
@@ -526,7 +570,6 @@ namespace _360AdsNG.Infrastructure.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<string>("PublicId")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("SecurityStamp")
@@ -561,9 +604,9 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Id = "admin_id",
                             AccessFailedCount = 0,
                             AddressId = "0",
-                            ConcurrencyStamp = "a998b576-adcd-4af8-9509-e8e37d958edf",
+                            ConcurrencyStamp = "6ddfb67d-b389-4d0f-b840-9e51ec439948",
                             ConfirmPassword = "Admin@123",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 237, DateTimeKind.Unspecified).AddTicks(7941), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 468, DateTimeKind.Unspecified).AddTicks(9957), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             FirstName = "Admin",
@@ -572,13 +615,13 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
                             Password = "Admin@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMlSx0lFvcbTKyrTVmRKq5IC5Y3TOa16vw1yV0BNa37n+9e3cMLGUjMIKkerHDTW/w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEI/cgBcVtvIPidN9IaqeHPqWdxQkrraGrtJwDCucjJ6tt9Fe5x24EnjczbdNYQgQGA==",
                             PhoneNumber = "08130990162",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_0",
-                            SecurityStamp = "61015d8e-2b39-4ce7-849a-61281f89079c",
+                            SecurityStamp = "6cda5d40-e8f4-4723-b8ee-507f924952a0",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 237, DateTimeKind.Unspecified).AddTicks(7945), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 468, DateTimeKind.Unspecified).AddTicks(9962), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "admin@admin.com"
                         },
                         new
@@ -587,10 +630,10 @@ namespace _360AdsNG.Infrastructure.Migrations
                             AccessFailedCount = 0,
                             AddressId = "1",
                             BusinessName = "ABC Company",
-                            ConcurrencyStamp = "620efb65-26a2-4669-b8df-4ec3d217f1ce",
+                            ConcurrencyStamp = "f3dd61f9-94ce-4a41-af0f-0dfb932b6f98",
                             ConfirmPassword = "Password@123",
                             ContactName = "Jane Doe",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 378, DateTimeKind.Unspecified).AddTicks(3860), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 515, DateTimeKind.Unspecified).AddTicks(9521), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "john.doe@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "John",
@@ -601,12 +644,12 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedUserName = "JOHN.DOE@GMAIL.COM",
                             Occupation = "Developer",
                             Password = "Password@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEB0R4ZQcU9rVCvIAxoL0Wy93FBMnG6bbN3mg572mH6hWeKFWgUugVITAB71oIoILaQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKCKKyxY2Y4h7AVZY9vt+IvpyW1L5CCeAQdlFRwT1hHtM41UTymyb3NS6ohWdq6EyA==",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_1",
-                            SecurityStamp = "e6cd3028-4498-43f2-b596-175cd0854576",
+                            SecurityStamp = "a01c6f11-fc86-4eb2-a785-d0806262fcbb",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 378, DateTimeKind.Unspecified).AddTicks(3866), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 515, DateTimeKind.Unspecified).AddTicks(9529), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "john.doe@gmail.com"
                         },
                         new
@@ -615,10 +658,10 @@ namespace _360AdsNG.Infrastructure.Migrations
                             AccessFailedCount = 0,
                             AddressId = "2",
                             BusinessName = "XYZ Company",
-                            ConcurrencyStamp = "e271c1f7-d9de-4484-a4aa-d13a7c423162",
+                            ConcurrencyStamp = "92bea39d-762f-4c9e-bb03-5ec4a7b855bb",
                             ConfirmPassword = "Password@123",
                             ContactName = "John Smith",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 496, DateTimeKind.Unspecified).AddTicks(2267), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 564, DateTimeKind.Unspecified).AddTicks(2690), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "alice.smith@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Alice",
@@ -629,12 +672,12 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedUserName = "ALICE.SMITH@GMAIL.COM",
                             Occupation = "Designer",
                             Password = "Password@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAzw3oM6K1HEva57Aq0nP2ivZJeD/1hBdgtJDXMlTSDDiNDgkAedcHYWszbgZNa5Hw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELRScobVMatgZCsIXVAY8VH0PZSKqvV/q5L46gA1/06vxPtRX71kETX3VG3ms7bnOA==",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_2",
-                            SecurityStamp = "35df2c5f-882e-467e-92b6-5fb8847c7738",
+                            SecurityStamp = "5bee6181-043e-44ab-acf5-4f0f465397c6",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 496, DateTimeKind.Unspecified).AddTicks(2275), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 564, DateTimeKind.Unspecified).AddTicks(2691), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "alice.smith@gmail.com"
                         },
                         new
@@ -643,10 +686,10 @@ namespace _360AdsNG.Infrastructure.Migrations
                             AccessFailedCount = 0,
                             AddressId = "3",
                             BusinessName = "EFG Enterprises",
-                            ConcurrencyStamp = "19de1629-ebda-43a0-961b-a9956ceda372",
+                            ConcurrencyStamp = "63a8f3ed-3bae-49d8-8a16-24701aef7770",
                             ConfirmPassword = "Password@123",
                             ContactName = "Michael Johnson",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 617, DateTimeKind.Unspecified).AddTicks(7157), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 607, DateTimeKind.Unspecified).AddTicks(3037), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "emily.johnson@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Emily",
@@ -657,12 +700,12 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedUserName = "EMILY.JOHNSON@GMAIL.COM",
                             Occupation = "Writer",
                             Password = "Password@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFkYX0F3Q9NDReJAu5yUY49Wa2hmxQ8M/x24fKDyTIgd7L2WaWqTNwf2TZF71xemrw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOhNGU9nqy3U61W2n/OhG8bUBD0E08G7rtgDqn8xNj5C7Tq9cFhnN901CoV32ZSRvA==",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_3",
-                            SecurityStamp = "887fb302-e008-4d23-bf5b-65117960477a",
+                            SecurityStamp = "71d9f413-65c0-4d0c-b0a8-5b7472c4ca0d",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 617, DateTimeKind.Unspecified).AddTicks(7162), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 607, DateTimeKind.Unspecified).AddTicks(3037), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "emily.johnson@gmail.com"
                         },
                         new
@@ -671,10 +714,10 @@ namespace _360AdsNG.Infrastructure.Migrations
                             AccessFailedCount = 0,
                             AddressId = "4",
                             BusinessName = "DB Tech",
-                            ConcurrencyStamp = "1dff1dd2-459d-4c0d-a97e-9c7a73e7e04c",
+                            ConcurrencyStamp = "377112c0-0aa7-44c7-9ab8-15a0e573df1f",
                             ConfirmPassword = "Password@123",
                             ContactName = "Emma Brown",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 727, DateTimeKind.Unspecified).AddTicks(4845), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 654, DateTimeKind.Unspecified).AddTicks(8572), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "david.brown@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "David",
@@ -685,12 +728,12 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedUserName = "DAVID.BROWN@GMAIL.COM",
                             Occupation = "Engineer",
                             Password = "Password@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGu/ObVF6swfVOjRy8bGplHPPItqqSprm/vI/G9RnmL0x7sccut26gBGTIdMS8iccw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJ0XVsWP3JUTwxGUH0c2/yFQydzp+OPXeVMV+FN0lGZOG2M16nLhVMEa/BRYhTbUQw==",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_4",
-                            SecurityStamp = "d351801b-d686-40fd-a961-bc00e422a187",
+                            SecurityStamp = "4c3cbef9-dbcd-4c1b-855e-ec4a78dc890e",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 727, DateTimeKind.Unspecified).AddTicks(4851), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 654, DateTimeKind.Unspecified).AddTicks(8575), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "david.brown@gmail.com"
                         },
                         new
@@ -699,10 +742,10 @@ namespace _360AdsNG.Infrastructure.Migrations
                             AccessFailedCount = 0,
                             AddressId = "5",
                             BusinessName = "Artistic Creations",
-                            ConcurrencyStamp = "3430640a-9829-4dea-a299-9614c9f562cb",
+                            ConcurrencyStamp = "d4c1ede9-d3a7-4a6d-8ccc-c81420f88670",
                             ConfirmPassword = "Password@123",
                             ContactName = "Daniel Martinez",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 832, DateTimeKind.Unspecified).AddTicks(5824), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 702, DateTimeKind.Unspecified).AddTicks(801), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "sophia.martinez@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Sophia",
@@ -713,12 +756,12 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedUserName = "SOPHIA.MARTINEZ@GMAIL.COM",
                             Occupation = "Artist",
                             Password = "Password@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEODi3migON7xmzgeZCtXZdYwnoQK/lrJ/WFTEeznlSnRVwYN7EkdZJ2TYN8Xo8ERGA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG6nQSfLjDmBlCHafPb2y6FpHvPMWdSdrG2/KBPcguvP9N/Ys48vCQFNtyYnZkrf8w==",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_5",
-                            SecurityStamp = "0d856bb9-0d6d-4f11-a9e3-73f13365bf35",
+                            SecurityStamp = "312113e3-9d11-40d7-972f-abfd3e0a31e2",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 832, DateTimeKind.Unspecified).AddTicks(5828), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 702, DateTimeKind.Unspecified).AddTicks(802), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "sophia.martinez@gmail.com"
                         },
                         new
@@ -727,10 +770,10 @@ namespace _360AdsNG.Infrastructure.Migrations
                             AccessFailedCount = 0,
                             AddressId = "6",
                             BusinessName = "Lee Marketing Solutions",
-                            ConcurrencyStamp = "c9810d79-5635-4f29-939f-209a5dab938e",
+                            ConcurrencyStamp = "d09acb0a-e6df-4918-b770-32dbf36ed12a",
                             ConfirmPassword = "Password@123",
                             ContactName = "Olivia Lee",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 970, DateTimeKind.Unspecified).AddTicks(7178), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 749, DateTimeKind.Unspecified).AddTicks(5950), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "james.lee@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "James",
@@ -741,12 +784,12 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedUserName = "JAMES.LEE@GMAIL.COM",
                             Occupation = "Marketing Manager",
                             Password = "Password@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIgAoMqrMTfR6LuW/xQcVpUbk9L6YtYESGsyXCU+I3ir0zmLDetMehLOr9zHq09i6w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAAx227mOOEu5Y4gMTKRqYaUnOZaWHPk6iAF1J+S6Ni9FAdFsQCah44/yBignxb2IQ==",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_6",
-                            SecurityStamp = "cc02af1e-e6c0-41d1-b8e8-7bb20fe692a4",
+                            SecurityStamp = "0232a0ea-57f1-4c28-b6a9-2450ef1de455",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 9, 59, 970, DateTimeKind.Unspecified).AddTicks(7184), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 749, DateTimeKind.Unspecified).AddTicks(5951), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "james.lee@gmail.com"
                         },
                         new
@@ -755,10 +798,10 @@ namespace _360AdsNG.Infrastructure.Migrations
                             AccessFailedCount = 0,
                             AddressId = "7",
                             BusinessName = "Educational Institute",
-                            ConcurrencyStamp = "15146a88-7fef-420a-8185-38fc1eeb6cf9",
+                            ConcurrencyStamp = "c567a698-d09d-4e46-9c8a-c34049e16824",
                             ConfirmPassword = "Password@123",
                             ContactName = "Noah Wilson",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 115, DateTimeKind.Unspecified).AddTicks(8993), new TimeSpan(0, 0, 0, 0, 0)),
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(1704), new TimeSpan(0, 0, 0, 0, 0)),
                             Email = "emma.wilson@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Emma",
@@ -769,12 +812,12 @@ namespace _360AdsNG.Infrastructure.Migrations
                             NormalizedUserName = "EMMA.WILSON@GMAIL.COM",
                             Occupation = "Teacher",
                             Password = "Password@123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBXAlLo06iKDR3SXkf/YQjye7S10vFZgcYljx0BApkLSM9cYyYEVI6fZwmbk43pWJw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIPxJsCQiyisfRAn41R9LYANVeDwcvHEJg8/ORzU4Vb0HfN+Pt5RDsx4KXJXmBhyPA==",
                             PhoneNumberConfirmed = false,
                             PublicId = "public_id_7",
-                            SecurityStamp = "5161e48a-7046-4eb6-8c81-077c06b2d8e0",
+                            SecurityStamp = "f592ad06-014f-4dea-b385-f78f858e1690",
                             TwoFactorEnabled = false,
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 115, DateTimeKind.Unspecified).AddTicks(8998), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(1707), new TimeSpan(0, 0, 0, 0, 0)),
                             UserName = "emma.wilson@gmail.com"
                         });
                 });
@@ -788,6 +831,7 @@ namespace _360AdsNG.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("CompanyName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTimeOffset>("CreatedAt")
@@ -799,6 +843,9 @@ namespace _360AdsNG.Infrastructure.Migrations
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("VendorType")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -814,36 +861,40 @@ namespace _360AdsNG.Infrastructure.Migrations
                             Id = "1",
                             AddressId = "1",
                             CompanyName = "Vendor Company",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(219), new TimeSpan(0, 0, 0, 0, 0)),
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(226), new TimeSpan(0, 0, 0, 0, 0)),
-                            UserId = "user_id_1"
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2194), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2195), new TimeSpan(0, 0, 0, 0, 0)),
+                            UserId = "user_id_1",
+                            VendorType = 1
                         },
                         new
                         {
                             Id = "2",
                             AddressId = "2",
                             CompanyName = "Second Vendor Company",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(359), new TimeSpan(0, 0, 0, 0, 0)),
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(360), new TimeSpan(0, 0, 0, 0, 0)),
-                            UserId = "user_id_2"
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2200), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2202), new TimeSpan(0, 0, 0, 0, 0)),
+                            UserId = "user_id_2",
+                            VendorType = 1
                         },
                         new
                         {
                             Id = "3",
                             AddressId = "3",
                             CompanyName = "Third Vendor Company",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(382), new TimeSpan(0, 0, 0, 0, 0)),
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(383), new TimeSpan(0, 0, 0, 0, 0)),
-                            UserId = "user_id_3"
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2205), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2206), new TimeSpan(0, 0, 0, 0, 0)),
+                            UserId = "user_id_3",
+                            VendorType = 1
                         },
                         new
                         {
                             Id = "4",
                             AddressId = "4",
                             CompanyName = "Fourth Vendor Company",
-                            CreatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(387), new TimeSpan(0, 0, 0, 0, 0)),
-                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 5, 29, 19, 10, 0, 116, DateTimeKind.Unspecified).AddTicks(388), new TimeSpan(0, 0, 0, 0, 0)),
-                            UserId = "user_id_4"
+                            CreatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2210), new TimeSpan(0, 0, 0, 0, 0)),
+                            UpdatedAt = new DateTimeOffset(new DateTime(2024, 6, 19, 8, 54, 40, 798, DateTimeKind.Unspecified).AddTicks(2211), new TimeSpan(0, 0, 0, 0, 0)),
+                            UserId = "user_id_4",
+                            VendorType = 1
                         });
                 });
 

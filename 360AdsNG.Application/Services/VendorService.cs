@@ -1,9 +1,12 @@
 ﻿using _360AdsNG.Application.Abstractions;
 using _360AdsNG.Application.Dtos;
+using _360AdsNG.Application.Dtos.AuthDtos;
 using _360AdsNG.Application.Dtos.VendorDtos;
+using _360AdsNG.Domain.Constants;
 using _360AdsNG.Domain.Entities;
 using _360AdsNG.Domain.Repositories;
 using Microsoft.AspNetCore.Identity;
+using System.Web;
 
 namespace _360AdsNG.Application.Services;
 
@@ -19,6 +22,8 @@ public class VendorService : IVendorService
         _userManager = userManager;
         _unitOfWork = unitOfWork;
     }
+
+    
 
     public async Task<Result> UpdateVendorProfile(UpdateVendorProfileDto dto, string userId)
     {
@@ -53,4 +58,6 @@ public class VendorService : IVendorService
 
         return Result.Success();
     }
+
+    
 }

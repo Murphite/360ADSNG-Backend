@@ -13,7 +13,6 @@ public class Dimension
         Height = height;
     }
 
-    // method to return a formatted string
     public override string ToString()
     {
         return $"{Width}x{Height}";

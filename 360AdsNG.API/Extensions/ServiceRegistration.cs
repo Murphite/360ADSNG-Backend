@@ -2,11 +2,14 @@
 using _360AdsNG.Application.Services;
 using _360AdsNG.Domain.Interfaces;
 using _360AdsNG.Domain.Repositories;
+using _360AdsNG.Infrastructure.Persistence;
 using _360AdsNG.Infrastructure.Repositories;
 using _360AdsNG.Infrastructure.Seed;
 using _360AdsNG.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -18,7 +21,8 @@ public static class ServiceRegistration
 {
     public static void AddServices(this IServiceCollection services, IConfiguration configuration, ILogger<LoggingCategory> logger)
     {
-        logger.LogInformation("Configuring Swagger");
+        logger.LogInformation("**************** Configuring Swagger ****************");
+
         services.AddSwaggerGen(options =>
         {
             options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -86,6 +90,5 @@ public static class ServiceRegistration
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IBillboardService, BillboardService>();
         services.AddScoped<IVendorService, VendorService>();
-        //services.AddScoped<IDbInitializer, DbInitializer>();
     }
 }

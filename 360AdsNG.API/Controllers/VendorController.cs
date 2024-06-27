@@ -10,8 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace _360AdsNG.API.Controllers;
 
 [ApiController]
-//[Authorize]
-[Route("api/v1/vendor")]
+[Route("api/vendor")]
 public class VendorController : Controller
 {
     private readonly IVendorService _vendorService;

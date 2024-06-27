@@ -13,3 +13,4 @@ C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\D
 C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Debug\net8.0\refint\360AdsNG.Infrastructure.dll
 C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Debug\net8.0\360AdsNG.Infrastructure.pdb
 C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Debug\net8.0\ref\360AdsNG.Infrastructure.dll
+C:\Users\DECAGON\Desktop\360AdsNG.API\360AdsNG.API\360AdsNG.Infrastructure\obj\Debug\net8.0\360AdsNG.Infrastructure.sourcelink.json

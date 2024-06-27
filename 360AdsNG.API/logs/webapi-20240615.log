@@ -1,0 +1,80 @@
+[2024-06-15 23:17:34.190 +01:00  INF]  Configuring Swagger
+[2024-06-15 23:17:34.270 +01:00  INF]  Configuring Authentication
+[2024-06-15 23:17:34.272 +01:00  INF]  Configuring CORS
+[2024-06-15 23:17:34.272 +01:00  INF]  Configuring Dependency Injection
+[2024-06-15 23:17:40.192 +01:00  INF]  Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-15 23:17:40.221 +01:00  INF]  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-15 23:17:40.349 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-15 23:17:40.480 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-15 23:17:40.481 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-15 23:17:40.496 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-06-15 23:17:40.678 +01:00  INF]  User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-06-15 23:17:41.132 +01:00  INF]  Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-15 23:17:41.206 +01:00  INF]  Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-15 23:17:41.210 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-15 23:17:41.244 +01:00  INF]  Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-15 23:17:41.631 +01:00  WRN]  The WebRootPath was not found: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-06-15 23:17:42.137 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-06-15 23:17:42.137 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-06-15 23:17:42.137 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-06-15 23:17:42.138 +01:00  INF]  Hosting environment: Development
+[2024-06-15 23:17:42.138 +01:00  INF]  Content root path: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-06-15 23:17:42.784 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger - null null
+[2024-06-15 23:17:43.255 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger - 301 0 null 486.6547ms
+[2024-06-15 23:17:43.266 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-06-15 23:17:43.476 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/swagger-ui.css - null null
+[2024-06-15 23:17:43.479 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/swagger-ui-bundle.js - null null
+[2024-06-15 23:17:43.479 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/swagger-ui-standalone-preset.js - null null
+[2024-06-15 23:17:43.479 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 213.4192ms
+[2024-06-15 23:17:43.486 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-06-15 23:17:43.489 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-06-15 23:17:43.516 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 26.9189ms
+[2024-06-15 23:17:43.592 +01:00  INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2024-06-15 23:17:43.592 +01:00  INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2024-06-15 23:17:43.597 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/swagger-ui.css - 200 143943 text/css 121.2731ms
+[2024-06-15 23:17:43.597 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 118.222ms
+[2024-06-15 23:17:43.604 +01:00  INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2024-06-15 23:17:43.604 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 125.6551ms
+[2024-06-15 23:17:43.645 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 159.0512ms
+[2024-06-15 23:17:43.854 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-06-15 23:17:44.142 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 288.8347ms

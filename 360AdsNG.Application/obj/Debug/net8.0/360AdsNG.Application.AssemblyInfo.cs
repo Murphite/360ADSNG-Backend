@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("360AdsNG.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae12b1c5a0af2fb91c7c5c9f4ce2f7f6caaf031a")]
 [assembly: System.Reflection.AssemblyProductAttribute("360AdsNG.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("360AdsNG.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

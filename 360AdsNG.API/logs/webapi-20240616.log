@@ -1,0 +1,746 @@
+[2024-06-16 22:02:09.035 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:02:09.090 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:02:09.091 +01:00  INF]  Configuring CORS
+[2024-06-16 22:02:09.091 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:10:31.528 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:10:31.574 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:10:31.575 +01:00  INF]  Configuring CORS
+[2024-06-16 22:10:31.575 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:10:33.884 +01:00  INF]  Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:10:33.903 +01:00  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:10:34.107 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:10:34.260 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:10:34.261 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:10:34.270 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-06-16 22:18:05.028 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:18:05.044 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:18:05.045 +01:00  INF]  Configuring CORS
+[2024-06-16 22:18:05.045 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:18:13.783 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:18:13.803 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:18:13.803 +01:00  INF]  Configuring CORS
+[2024-06-16 22:18:13.803 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:18:24.032 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:18:24.051 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:18:24.052 +01:00  INF]  Configuring CORS
+[2024-06-16 22:18:24.052 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:18:25.202 +01:00  INF]  Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:18:25.214 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:18:25.332 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:18:25.445 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:18:25.446 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:18:25.454 +01:00  INF]  Applying migration '20240616211815_updateVendorModel'.
+[2024-06-16 22:18:25.510 +01:00  INF]  Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CompanyName" = '' WHERE "CompanyName" IS NULL;
+ALTER TABLE "Vendors" ALTER COLUMN "CompanyName" SET NOT NULL;
+ALTER TABLE "Vendors" ALTER COLUMN "CompanyName" SET DEFAULT '';
+[2024-06-16 22:18:25.511 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Vendors" ADD "VendorType" integer NOT NULL DEFAULT 0;
+[2024-06-16 22:18:25.515 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561613+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561613+00:00'
+WHERE "Id" = '0';
+[2024-06-16 22:18:25.515 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561614+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561614+00:00'
+WHERE "Id" = '1';
+[2024-06-16 22:18:25.515 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561614+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561614+00:00'
+WHERE "Id" = '2';
+[2024-06-16 22:18:25.516 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561615+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561615+00:00'
+WHERE "Id" = '3';
+[2024-06-16 22:18:25.516 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561619+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561619+00:00'
+WHERE "Id" = '4';
+[2024-06-16 22:18:25.516 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561619+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561619+00:00'
+WHERE "Id" = '5';
+[2024-06-16 22:18:25.516 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.56162+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.56162+00:00'
+WHERE "Id" = '6';
+[2024-06-16 22:18:25.516 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561621+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561621+00:00'
+WHERE "Id" = '7';
+[2024-06-16 22:18:25.519 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '5e77d485-4615-4944-bf48-3b13fea7241f', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.605555+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAELs0H/f9vN2rsAtYRJoxCFxBAKKVJOAadiu/MuUCOGFZgShGKqXFLn7VLpHOBlreng==', "SecurityStamp" = 'ca1dcff2-c589-43a5-a39c-a8b8b3a36b76', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.605556+00:00'
+WHERE "Id" = 'admin_id';
+[2024-06-16 22:18:25.519 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = 'd39e5b77-8fb0-4a27-9e1d-23282c19fe30', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.646815+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAECWLhJwija02bIQaFXN7KfRvrUi1PhdP6O4nsKn5wXVZZsg6YEz+5t7qMuc+fGwLZw==', "SecurityStamp" = 'b3f2b637-2137-43f1-90bf-9eac18ae4269', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.646815+00:00'
+WHERE "Id" = 'user_id_1';
+[2024-06-16 22:18:25.520 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '898af991-d05c-4f69-ad51-1f96c03fbb85', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.689577+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEGC9cpQWId95qb7Eb9MXnKgwYruqm2OeD5bzoep+LiIqQwk5LCf4Ajg+nTuVxiT6rQ==', "SecurityStamp" = 'c076075e-d5ce-462e-871a-3c784f4ef84c', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.689577+00:00'
+WHERE "Id" = 'user_id_2';
+[2024-06-16 22:18:25.520 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '442b8660-2183-4cdb-80b4-f5f6c1d663fc', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.731653+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEC4sZ+ssNyCUXDw3nIjS4HxbrcX6ttxB2QcRC8i1QC2UiqxRtzRZW7U4q+LJ7yieig==', "SecurityStamp" = '8652df84-cf93-4643-9ec3-4e4683deafde', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.731654+00:00'
+WHERE "Id" = 'user_id_3';
+[2024-06-16 22:18:25.520 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '5614a81e-10f0-42fc-9616-93d38265a78d', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.774217+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEOwL7FUcfBgXFTiMWrNF8IK3woXMCZbyT2nl7epjRiYIGikk9SJKaOhDyE/z5yWVtQ==', "SecurityStamp" = '7bfd86a1-6787-4fc2-ac4d-ddaf8946f18a', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.774217+00:00'
+WHERE "Id" = 'user_id_4';
+[2024-06-16 22:18:25.521 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '6d196143-3e61-4b2d-bb83-15e6d1d00770', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.817322+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEF/xBl/L2xyNigdahJgB06mrPaPDPHjlVzbvHGF+xpIVpGVLgjzvNC5Jut0uGELl1g==', "SecurityStamp" = 'bb915ea7-6bb3-4e59-94e3-e7944693f23e', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.817322+00:00'
+WHERE "Id" = 'user_id_5';
+[2024-06-16 22:18:25.521 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '1f629056-d47e-433c-9af2-47f2b0ad4c27', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.862611+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAENoc77C+CnXafkt3Vpun7XZtTimqFvhIN4KfG9lqL36z/swz1STyrHzj5RQg15mobA==', "SecurityStamp" = 'ed321b37-017c-43b4-8f32-ef2a89a9f34b', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.862611+00:00'
+WHERE "Id" = 'user_id_6';
+[2024-06-16 22:18:25.521 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '96dd4040-1286-44b9-913d-53d9ec819094', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908414+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAELMLCOXCNUp0YQYDUIQtwVn80Q8FLo2TRRGzZzZMGwgWKCorFsRKDTuUW0Hpgc8mRw==', "SecurityStamp" = 'a9f0fd0c-595d-4440-902f-1a34a7da64a6', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908414+00:00'
+WHERE "Id" = 'user_id_7';
+[2024-06-16 22:18:25.524 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561634+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561634+00:00'
+WHERE "Id" = '1';
+[2024-06-16 22:18:25.524 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561635+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561635+00:00'
+WHERE "Id" = '2';
+[2024-06-16 22:18:25.524 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561636+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561636+00:00'
+WHERE "Id" = '3';
+[2024-06-16 22:18:25.524 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561636+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.561636+00:00'
+WHERE "Id" = '4';
+[2024-06-16 22:18:25.525 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908452+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908452+00:00', "VendorType" = 0
+WHERE "Id" = '1';
+[2024-06-16 22:18:25.525 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908452+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908453+00:00', "VendorType" = 0
+WHERE "Id" = '2';
+[2024-06-16 22:18:25.526 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908453+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908453+00:00', "VendorType" = 0
+WHERE "Id" = '3';
+[2024-06-16 22:18:25.526 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908453+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:18:14.908453+00:00', "VendorType" = 0
+WHERE "Id" = '4';
+[2024-06-16 22:18:25.527 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240616211815_updateVendorModel', '8.0.4');
+[2024-06-16 22:31:24.760 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:31:24.781 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:31:24.782 +01:00  INF]  Configuring CORS
+[2024-06-16 22:31:24.782 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:31:35.999 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:31:36.017 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:31:36.018 +01:00  INF]  Configuring CORS
+[2024-06-16 22:31:36.018 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:31:37.692 +01:00  INF]  Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:31:37.714 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:31:37.948 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:31:38.308 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:31:38.311 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:31:38.363 +01:00  INF]  Applying migration '20240616213126_updateVendorModel'.
+[2024-06-16 22:31:38.618 +01:00  INF]  Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693049+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693049+00:00'
+WHERE "Id" = '0';
+[2024-06-16 22:31:38.620 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.69305+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.69305+00:00'
+WHERE "Id" = '1';
+[2024-06-16 22:31:38.622 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.69305+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.69305+00:00'
+WHERE "Id" = '2';
+[2024-06-16 22:31:38.624 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693051+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693051+00:00'
+WHERE "Id" = '3';
+[2024-06-16 22:31:38.626 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693051+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693051+00:00'
+WHERE "Id" = '4';
+[2024-06-16 22:31:38.627 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693052+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693052+00:00'
+WHERE "Id" = '5';
+[2024-06-16 22:31:38.629 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693054+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693054+00:00'
+WHERE "Id" = '6';
+[2024-06-16 22:31:38.631 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Addresses" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693054+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693054+00:00'
+WHERE "Id" = '7';
+[2024-06-16 22:31:38.642 +01:00  INF]  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = 'def460c1-4b30-4c60-860a-18529c408791', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.742406+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEA0CHE+xYz97RXYHLa8lrMi298O9D6oQJr0mLtefR/NQmJotqKWkZsFXpsLmCQPseg==', "SecurityStamp" = 'f58a7b84-fe19-484b-854e-36169b1ae1fa', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.742407+00:00'
+WHERE "Id" = 'admin_id';
+[2024-06-16 22:31:38.645 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '07f99f5e-7fbe-440b-bca1-a53e015e8239', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.79748+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEAhrGJJ3Cdc8gm+QPSQ4SXwrxDu/RSct4/zH+sFjp0gG+Icjks7ttjTNZoxx3L8fyg==', "SecurityStamp" = '15d7dfa8-347b-4c09-83a8-985369f33005', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.797481+00:00'
+WHERE "Id" = 'user_id_1';
+[2024-06-16 22:31:38.647 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = 'bb9b67c8-df5a-4066-b08e-3f486750c50c', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.858376+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEGgvTXYzIwubNarVrllFkvq0j1NAWhEHYG3g4ZNBZWneoDgEX4GhHjJar/Od5tvioQ==', "SecurityStamp" = 'fa6b2aa2-a7d5-4401-b11b-af636b0a85c2', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.858376+00:00'
+WHERE "Id" = 'user_id_2';
+[2024-06-16 22:31:38.649 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '3b73c600-f704-4234-b812-747b2da353e1', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.927533+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEDAc0+UdUIo0qOKUBj/h95SpWqX1udax8TVlZUa4FTh+OEQaWqobcSQoyuy6oMJvzg==', "SecurityStamp" = '0ae11231-bb58-40b9-adfb-36ff0ee81ebc', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.927533+00:00'
+WHERE "Id" = 'user_id_3';
+[2024-06-16 22:31:38.651 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '51c67e42-d7e3-4cee-b988-1362b7bf729d', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.008831+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEA9NgeOOHpq1yQjZldrGabLGf83qL/ei1VmQ2ZraIg0+K0gc9yKjICzYqzAlXL6PsA==', "SecurityStamp" = '664180eb-3258-43d3-a545-6a4130d929f5', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.008832+00:00'
+WHERE "Id" = 'user_id_4';
+[2024-06-16 22:31:38.653 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = 'cda6d77d-6ece-4c0e-b07c-b7e860ad9e23', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.090426+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEIADdGIF4m0a1TaCLEQPD7ZZpEu6x8UqBr/hzTjRhT5/j2AGyK/KmdrSJVNXFHH7Rw==', "SecurityStamp" = '1c3b6e3a-953c-4539-b780-3c20eb0a06ba', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.090426+00:00'
+WHERE "Id" = 'user_id_5';
+[2024-06-16 22:31:38.655 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = 'fc17a4bb-5281-4451-a08f-ce4ec9ab72be', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.174386+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEPInIzU/Su0vA6uqtxNQco1sRqoRcQsFQfTNJb3W+stuvWE3wSzJ5xDCzpzYV56JSQ==', "SecurityStamp" = '85cd2c12-f94f-4083-afec-9f2defc8fe6e', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.174387+00:00'
+WHERE "Id" = 'user_id_6';
+[2024-06-16 22:31:38.657 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "ConcurrencyStamp" = '743b3e1a-107d-4c88-bb8d-3e30cd98dd61', "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268062+00:00', "PasswordHash" = 'AQAAAAIAAYagAAAAEE7Xb02Ju7ylMEE3sFlBGJDRQa7f9qlyZAiN7uhI7BA/9Hqn6ueGVC+CnRzw9xj6wg==', "SecurityStamp" = 'c03f158b-c443-49d4-8fbd-0f47648d603c', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268062+00:00'
+WHERE "Id" = 'user_id_7';
+[2024-06-16 22:31:38.666 +01:00  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693069+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693069+00:00'
+WHERE "Id" = '1';
+[2024-06-16 22:31:38.668 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693069+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693069+00:00'
+WHERE "Id" = '2';
+[2024-06-16 22:31:38.669 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.69307+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.69307+00:00'
+WHERE "Id" = '3';
+[2024-06-16 22:31:38.671 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Billboards" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693071+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:25.693071+00:00'
+WHERE "Id" = '4';
+[2024-06-16 22:31:38.680 +01:00  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268135+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268135+00:00', "VendorType" = 1
+WHERE "Id" = '1';
+[2024-06-16 22:31:38.682 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268135+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268135+00:00', "VendorType" = 1
+WHERE "Id" = '2';
+[2024-06-16 22:31:38.683 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268136+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268136+00:00', "VendorType" = 1
+WHERE "Id" = '3';
+[2024-06-16 22:31:38.685 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Vendors" SET "CreatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268136+00:00', "UpdatedAt" = TIMESTAMPTZ '2024-06-16T21:31:26.268136+00:00', "VendorType" = 1
+WHERE "Id" = '4';
+[2024-06-16 22:31:38.687 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240616213126_updateVendorModel', '8.0.4');
+[2024-06-16 22:33:16.827 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:33:16.856 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:33:16.856 +01:00  INF]  Configuring CORS
+[2024-06-16 22:33:16.856 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:33:23.315 +01:00  INF]  Executed DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:33:23.336 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:33:23.565 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:33:23.779 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:33:23.780 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:33:23.794 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-06-16 22:33:23.954 +01:00  INF]  User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-06-16 22:33:24.268 +01:00  INF]  Executed DbCommand (20ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:33:24.311 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:33:24.314 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:33:24.329 +01:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 22:33:24.667 +01:00  WRN]  The WebRootPath was not found: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-06-16 22:33:25.073 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-06-16 22:33:25.073 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-06-16 22:33:25.073 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-06-16 22:33:25.074 +01:00  INF]  Hosting environment: Development
+[2024-06-16 22:33:25.074 +01:00  INF]  Content root path: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-06-16 22:33:26.513 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-06-16 22:33:26.827 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 323.9129ms
+[2024-06-16 22:33:26.837 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-06-16 22:33:26.841 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-06-16 22:33:26.858 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 20.9414ms
+[2024-06-16 22:33:26.903 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.3457ms
+[2024-06-16 22:33:26.997 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-06-16 22:33:27.096 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.2877ms
+[2024-06-16 22:34:30.760 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/Login - application/json 69
+[2024-06-16 22:34:30.765 +01:00  INF]  CORS policy execution successful.
+[2024-06-16 22:34:30.854 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:34:30.871 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-06-16 22:34:30.960 +01:00  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2024-06-16 22:34:30.971 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 97.0285ms
+[2024-06-16 22:34:30.971 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:34:30.972 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/Login - 400 null application/problem+json; charset=utf-8 212.3311ms
+[2024-06-16 22:39:36.943 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:39:36.966 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:39:36.967 +01:00  INF]  Configuring CORS
+[2024-06-16 22:39:36.967 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:39:38.508 +01:00  INF]  Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:39:38.521 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:39:38.645 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:39:38.752 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:39:38.752 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:39:38.759 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-06-16 22:39:38.786 +01:00  INF]  User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-06-16 22:39:38.937 +01:00  INF]  Executed DbCommand (13ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:39:38.965 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:39:38.966 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:39:38.977 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 22:39:39.066 +01:00  WRN]  The WebRootPath was not found: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-06-16 22:39:39.153 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-06-16 22:39:39.153 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-06-16 22:39:39.154 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-06-16 22:39:39.154 +01:00  INF]  Hosting environment: Development
+[2024-06-16 22:39:39.154 +01:00  INF]  Content root path: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-06-16 22:39:39.973 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-06-16 22:39:40.142 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-06-16 22:39:40.144 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 175.4927ms
+[2024-06-16 22:39:40.149 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 6.7594ms
+[2024-06-16 22:39:40.151 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-06-16 22:39:40.183 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.7635ms
+[2024-06-16 22:39:40.235 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-06-16 22:39:40.318 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.709ms
+[2024-06-16 22:39:52.861 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/Login - application/json 69
+[2024-06-16 22:39:52.869 +01:00  INF]  CORS policy execution successful.
+[2024-06-16 22:39:53.019 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:39:53.037 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-06-16 22:39:53.081 +01:00  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2024-06-16 22:39:53.098 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 57.7714ms
+[2024-06-16 22:39:53.098 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:39:53.101 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/Login - 400 null application/problem+json; charset=utf-8 239.8685ms
+[2024-06-16 22:40:17.511 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/Login - application/json 65
+[2024-06-16 22:40:17.520 +01:00  INF]  CORS policy execution successful.
+[2024-06-16 22:40:17.522 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:40:17.524 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-06-16 22:40:17.576 +01:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 22:40:17.826 +01:00  INF]  Executed DbCommand (6ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+[2024-06-16 22:40:18.105 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 580.6797ms
+[2024-06-16 22:40:18.108 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:40:18.301 +01:00  ERR]  Sequence contains no elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at _360AdsNG.Application.Services.AuthService.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.Application\Services\AuthService.cs:line 166
+   at _360AdsNG.API.Controllers.AuthController.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Controllers\AuthController.cs:line 66
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _360AdsNG.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Middlewares\ExceptionMiddleware.cs:line 26
+[2024-06-16 22:40:18.425 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/Login - 200 null application/json 914.9364ms
+[2024-06-16 22:40:53.265 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/Login - application/json 59
+[2024-06-16 22:40:53.275 +01:00  INF]  CORS policy execution successful.
+[2024-06-16 22:40:53.283 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:40:53.284 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-06-16 22:40:53.355 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 22:40:53.444 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+[2024-06-16 22:40:53.526 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 242.0924ms
+[2024-06-16 22:40:53.527 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:40:53.598 +01:00  ERR]  Sequence contains no elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at _360AdsNG.Application.Services.AuthService.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.Application\Services\AuthService.cs:line 166
+   at _360AdsNG.API.Controllers.AuthController.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Controllers\AuthController.cs:line 66
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _360AdsNG.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Middlewares\ExceptionMiddleware.cs:line 26
+[2024-06-16 22:40:53.602 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/Login - 200 null application/json 338.6416ms
+[2024-06-16 22:41:36.427 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/Login - application/json 65
+[2024-06-16 22:41:36.427 +01:00  INF]  CORS policy execution successful.
+[2024-06-16 22:41:36.427 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:41:36.428 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-06-16 22:41:36.440 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 22:41:36.577 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+[2024-06-16 22:41:36.706 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 273.206ms
+[2024-06-16 22:41:36.707 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:41:36.799 +01:00  ERR]  Sequence contains no elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at _360AdsNG.Application.Services.AuthService.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.Application\Services\AuthService.cs:line 166
+   at _360AdsNG.API.Controllers.AuthController.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Controllers\AuthController.cs:line 66
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _360AdsNG.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Middlewares\ExceptionMiddleware.cs:line 26
+[2024-06-16 22:41:36.802 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/Login - 200 null application/json 376.5611ms
+[2024-06-16 22:50:42.580 +01:00  INF]  Configuring Swagger
+[2024-06-16 22:50:42.628 +01:00  INF]  Configuring Authentication
+[2024-06-16 22:50:42.629 +01:00  INF]  Configuring CORS
+[2024-06-16 22:50:42.629 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 22:50:45.390 +01:00  INF]  Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:50:45.407 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:50:45.673 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:50:45.828 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 22:50:45.829 +01:00  INF]  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 22:50:45.840 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-06-16 22:50:45.879 +01:00  INF]  User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-06-16 22:50:46.205 +01:00  INF]  Executed DbCommand (38ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:50:46.286 +01:00  INF]  Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:50:46.291 +01:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 22:50:46.325 +01:00  INF]  Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 22:50:46.583 +01:00  WRN]  The WebRootPath was not found: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-06-16 22:50:46.904 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-06-16 22:50:46.904 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-06-16 22:50:46.905 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-06-16 22:50:46.905 +01:00  INF]  Hosting environment: Development
+[2024-06-16 22:50:46.905 +01:00  INF]  Content root path: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-06-16 22:50:47.393 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-06-16 22:50:47.976 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-06-16 22:50:47.976 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-06-16 22:50:47.986 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 598.8554ms
+[2024-06-16 22:50:48.018 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 45.3821ms
+[2024-06-16 22:50:48.142 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 169.7681ms
+[2024-06-16 22:50:48.278 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-06-16 22:50:48.653 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 375.963ms
+[2024-06-16 22:51:24.168 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/Login - application/json 65
+[2024-06-16 22:51:24.175 +01:00  INF]  CORS policy execution successful.
+[2024-06-16 22:51:24.354 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:51:24.397 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-06-16 22:51:38.727 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 22:51:54.311 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+[2024-06-16 22:52:41.842 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 77435.1381ms
+[2024-06-16 22:52:41.844 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 22:52:41.875 +01:00  ERR]  Sequence contains no elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at _360AdsNG.Application.Services.AuthService.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.Application\Services\AuthService.cs:line 211
+   at _360AdsNG.API.Controllers.AuthController.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Controllers\AuthController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _360AdsNG.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Middlewares\ExceptionMiddleware.cs:line 26
+[2024-06-16 22:52:41.930 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/Login - 200 null application/json 77762.4562ms
+[2024-06-16 23:02:21.150 +01:00  INF]  Configuring Swagger
+[2024-06-16 23:02:21.247 +01:00  INF]  Configuring Authentication
+[2024-06-16 23:02:21.250 +01:00  INF]  Configuring CORS
+[2024-06-16 23:02:21.251 +01:00  INF]  Configuring Dependency Injection
+[2024-06-16 23:02:24.577 +01:00  INF]  Executed DbCommand (95ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 23:02:24.599 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 23:02:24.802 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 23:02:24.998 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[2024-06-16 23:02:24.998 +01:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[2024-06-16 23:02:25.011 +01:00  INF]  No migrations were applied. The database is already up to date.
+[2024-06-16 23:02:25.053 +01:00  INF]  User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2024-06-16 23:02:25.318 +01:00  INF]  Executed DbCommand (20ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 23:02:25.364 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 23:02:25.367 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+[2024-06-16 23:02:25.385 +01:00  INF]  Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 23:02:25.531 +01:00  WRN]  The WebRootPath was not found: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\wwwroot. Static files may be unavailable.
+[2024-06-16 23:02:25.738 +01:00  INF]  Now listening on: https://localhost:7112
+[2024-06-16 23:02:25.739 +01:00  INF]  Now listening on: http://localhost:5169
+[2024-06-16 23:02:25.739 +01:00  INF]  Application started. Press Ctrl+C to shut down.
+[2024-06-16 23:02:25.740 +01:00  INF]  Hosting environment: Development
+[2024-06-16 23:02:25.740 +01:00  INF]  Content root path: C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API
+[2024-06-16 23:02:26.490 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/index.html - null null
+[2024-06-16 23:02:26.954 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/index.html - 200 null text/html;charset=utf-8 476.671ms
+[2024-06-16 23:02:26.958 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - null null
+[2024-06-16 23:02:26.961 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/_vs/browserLink - null null
+[2024-06-16 23:02:26.972 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 14.2294ms
+[2024-06-16 23:02:27.039 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.6277ms
+[2024-06-16 23:02:27.084 +01:00  INF]  Request starting HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - null null
+[2024-06-16 23:02:27.290 +01:00  INF]  Request finished HTTP/2 GET https://localhost:7112/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.9663ms
+[2024-06-16 23:03:01.819 +01:00  INF]  Request starting HTTP/2 POST https://localhost:7112/api/v1/auth/Login - application/json 65
+[2024-06-16 23:03:01.836 +01:00  INF]  CORS policy execution successful.
+[2024-06-16 23:03:01.955 +01:00  INF]  Executing endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 23:03:01.978 +01:00  INF]  Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(_360AdsNG.Application.Dtos.AuthDtos.LoginUserDto) on controller _360AdsNG.API.Controllers.AuthController (360AdsNG.API).
+[2024-06-16 23:03:18.759 +01:00  INF]  Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."AddressId", a."BusinessName", a."ConcurrencyStamp", a."ConfirmPassword", a."ContactName", a."CreatedAt", a."Email", a."EmailConfirmed", a."FirstName", a."ImageUrl", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."Occupation", a."Password", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."PublicId", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedAt", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[2024-06-16 23:03:31.636 +01:00  INF]  Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+[2024-06-16 23:03:39.455 +01:00  INF]  Executed action _360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API) in 37468.3603ms
+[2024-06-16 23:03:39.457 +01:00  INF]  Executed endpoint '_360AdsNG.API.Controllers.AuthController.Login (360AdsNG.API)'
+[2024-06-16 23:03:39.498 +01:00  ERR]  Sequence contains no elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at _360AdsNG.Application.Services.AuthService.Login(LoginUserDto loginUserDto)
+   at _360AdsNG.API.Controllers.AuthController.Login(LoginUserDto loginUserDto) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Controllers\AuthController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _360AdsNG.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Downloads\Project\360AdsNG.API\360AdsNG.API\360AdsNG.API\360AdsNG.API\Middlewares\ExceptionMiddleware.cs:line 26
+[2024-06-16 23:03:39.601 +01:00  INF]  Request finished HTTP/2 POST https://localhost:7112/api/v1/auth/Login - 200 null application/json 37782.3507ms

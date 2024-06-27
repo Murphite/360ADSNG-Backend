@@ -8,8 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace _360AdsNG.API.Controllers;
 
 [ApiController]
-//[Authorize]
-[Route("api/v1/auth")]
+[Route("api/auth")]
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
@@ -21,7 +20,7 @@ public class AuthController : ControllerBase
         _logger = logger;
     }
 
-    [HttpPost("register")]
+    [HttpPost("Register")]
     public async Task<IActionResult> Register([FromBody] RegisterUserDto registerUserDto)
     {
         var result = await _authService.Register(registerUserDto);
@@ -32,16 +31,10 @@ public class AuthController : ControllerBase
         return Ok(ResponseDto<object>.Success());
     }
 
-
-    [HttpPost("admin-register")]
-    public async Task<IActionResult> AdminRegister([FromBody] VendorRegisterDto registerAdminDto)
+    [HttpPost("BusinessRegister")]
+    public async Task<IActionResult> BusinessRegister([FromBody] RegisterBusinessDto registerBusinessDto)
     {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ResponseDto<object>.Failure(ModelState.GetErrors()));
-        }
-
-        var result = await _authService.VendorRegister(registerAdminDto);
+        var result = await _authService.RegisterBusiness(registerBusinessDto);
 
         if (result.IsFailure)
             return BadRequest(ResponseDto<object>.Failure(result.Errors));
@@ -49,8 +42,35 @@ public class AuthController : ControllerBase
         return Ok(ResponseDto<object>.Success());
     }
 
+    [HttpPost("VendorRegister")]
+    public async Task<IActionResult> VendorRegister([FromBody] VendorRegisterDto registerAdminDto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ResponseDto<object>.Failure(ModelState.GetErrors()));        
 
-    [HttpPost("login")]
+        var result = await _authService.RegisterVendor(registerAdminDto);
+
+        if (result.IsFailure)
+            return BadRequest(ResponseDto<object>.Failure(result.Errors));
+
+        return Ok(ResponseDto<object>.Success());
+    }
+
+    [HttpPost("AdminRegister")]
+    public async Task<IActionResult> AdminRegister([FromBody] AdminRegisterDto registerAdminDto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ResponseDto<object>.Failure(ModelState.GetErrors()));
+
+        var result = await _authService.RegisterAdmin(registerAdminDto);
+
+        if (result.IsFailure)
+            return BadRequest(ResponseDto<object>.Failure(result.Errors));
+
+        return Ok(ResponseDto<object>.Success());
+    }
+
+    [HttpPost("Login")]
     public async Task<IActionResult> Login([FromBody] LoginUserDto loginUserDto)
     {
         var result = await _authService.Login(loginUserDto);
@@ -61,8 +81,7 @@ public class AuthController : ControllerBase
         return Ok(ResponseDto<object>.Success(result.Data));
     }
 
-
-    [HttpPost("reset-password")]
+    [HttpPost("ResetPassword")]
     public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto resetPasswordDto)
     {
         if (!ModelState.IsValid)
@@ -78,8 +97,7 @@ public class AuthController : ControllerBase
         return Ok(ResponseDto<object>.Success(resetPasswordResult));
     }
 
-
-    [HttpPost("forgot-password")]
+    [HttpPost("ForgotPassword")]
     public async Task<IActionResult> ForgotPassword([FromBody] ResetPasswordDto resetPasswordDto)
     {
         var result = await _authService.ForgotPassword(resetPasswordDto);
@@ -90,8 +108,7 @@ public class AuthController : ControllerBase
         return Ok(ResponseDto<object>.Success());
     }
 
-
-    [HttpGet("confirm-email")]
+    [HttpGet("ConfirmEmail")]
     public async Task<IActionResult> ConfirmEmail([FromQuery] string email, [FromQuery] string token)
     {
         var result = await _authService.ConfirmEmail(email, token);
@@ -102,11 +119,9 @@ public class AuthController : ControllerBase
         return Ok(ResponseDto<object>.Success());
     }
 
-
-    [HttpPost("change-password")]
+    [HttpPost("ChangePassword")]
     public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto changePasswordDto)
     {
-
         if (!ModelState.IsValid)
         {
             return BadRequest(ResponseDto<object>.Failure(ModelState.GetErrors()));

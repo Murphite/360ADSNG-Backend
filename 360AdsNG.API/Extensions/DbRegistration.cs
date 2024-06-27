@@ -17,9 +17,7 @@ public static class DbRegistration
             optionsBuilder =>
             {
                 optionsBuilder.MigrationsAssembly(typeof(AppDbContext).Assembly.GetName().Name);
-                // optionsBuilder.UseNetTopologySuite();
             }));
-       // b => b.MigrationsAssembly("360AdsNG.Infrastructure")));
 
         services.AddIdentity<User, IdentityRole>()
             .AddEntityFrameworkStores<AppDbContext>()

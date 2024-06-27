@@ -1,5 +1,6 @@
 ﻿using _360AdsNG.Domain.Interfaces;
 using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.Extensions.Configuration;
 using MimeKit;
 
@@ -13,6 +14,7 @@ public class EmailService : IEmailService
     {
         _config = configuration;
     }
+
 
     public async Task<bool> SendEmailAsync(string recipientEmail, string subject, string body)
     {
@@ -31,11 +33,19 @@ public class EmailService : IEmailService
 
         using var smtp = new SmtpClient();
         smtp.CheckCertificateRevocation = true;
-        await smtp.ConnectAsync(host, port, true);
-        await smtp.AuthenticateAsync(senderEmail, appPassword);
-        await smtp.SendAsync(email);
-        await smtp.DisconnectAsync(true);
 
-        return true;
+        try
+        {
+            await smtp.ConnectAsync(host, port, SecureSocketOptions.StartTls);
+            await smtp.AuthenticateAsync(senderEmail, appPassword);
+            await smtp.SendAsync(email);
+            await smtp.DisconnectAsync(true);
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        }
     }
 }
